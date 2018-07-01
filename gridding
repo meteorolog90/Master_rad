@@ -4,3 +4,10 @@ https://unidata.github.io/MetPy/latest/examples/gridding/Point_Interpolation.htm
 https://www.youtube.com/watch?v=vkrbxLYkh5U
 http://tiao.io/posts/numpy-mgrid-vs-meshgrid/
 
+
+
+
+https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.interpolate.interp2d.html
+
+https://stackoverflow.com/questions/8661537/how-to-perform-bilinear-interpolation-in-python
+
