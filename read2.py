@@ -12,28 +12,28 @@ to_proj = ccrs.AlbersEqualArea(central_longitude=-1., central_latitude=10.)
 
 #load cordinates
 fname = 'PredtandfilaGrid.dat'
-col_names = ['index','lon','lat','country','altitude']
+#col_names = ['index','lon','lat','country','altitude'] ovo koristimo ako nemama definisane imena kolona
 #load temp
-df = pd.read_fwf(fname,na_values='MM',names = col_names)
+df = pd.read_fwf(fname,na_values='MM')
 
-
+#names = col_names
 lon = df['lon'].values
 lat = df['lat'].values
 xp, yp, _ = to_proj.transform_points(ccrs.Geodetic(), lon, lat).T
 
+#data1 = pd.read_fwf("CARPATGRID_TA_M.ser")
+#data1.rename( columns={'Unnamed: 0':'Year','Unnamed: 1':'Month'}, inplace=True )
+#xx = data1.drop(['Year','Month'], axis=1)
 
-
-
-data1 = pd.read_fwf("CARPATGRID_WS10_M.ser")
-data1.rename( columns={'Unnamed: 0':'Year','Unnamed: 1':'Month'}, inplace=True )
-xx = data1.drop(['Year','Month'], axis=1)
-
-x1= xx.loc[0]
-
+#x1= xx.loc[0]
+data1 = pd.read_csv('/home/meteorolog/Desktop/Master_rad/CARPATGRID_TA_M.ser',sep ='\s+')
+y = int(input('Unesite godinu:'))
+m = int(input('Unesite mesec:'))
+x1 = data1.loc[y,m]
 
 x_masked, y_masked, t = remove_nan_observations(xp, yp, x1.values)
 tempx, tempy, temp = interpolate(x_masked, y_masked, t, interp_type='cressman',
-                                 minimum_neighbors=4, search_radius=150000, hres=5000)
+                                 minimum_neighbors=8, search_radius=150000, hres=50000)
 
 temp = np.ma.masked_where(np.isnan(temp), temp)
 
@@ -56,7 +56,7 @@ fig.colorbar(mmb, shrink=.4, pad=0.02, boundaries=levels)
 
 
 
-view.set_title('Srednja temperatura za januar 1961.')
+view.set_title('Srednja temperatura')
 
 plt.show()
 
