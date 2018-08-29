@@ -34,7 +34,7 @@ def mesecni_podaci():
     to_proj = ccrs.AlbersEqualArea(central_longitude=-1., central_latitude=10.)
 
 #load cordinates
-    fname = 'PredtandfilaGrid.dat'
+    fname = '/home/martin/Master_rad/CARPATGRID_TA/PredtandfilaGrid.dat'
 #col_names = ['index','lon','lat','country','altitude'] ovo koristimo ako nemama definisane imena kolona
 #load temp
     df = pd.read_fwf(fname,na_values='MM')
@@ -45,39 +45,45 @@ def mesecni_podaci():
     xp, yp, _ = to_proj.transform_points(ccrs.Geodetic(), lon, lat).T
 
 
-    data1 = pd.read_csv('/home/meteorolog/Desktop/Master_rad/CARPATGRID_TA_M.ser',sep ='\s+')
+    data1 = pd.read_csv('/home/martin/Master_rad/CARPATGRID_TA/CARPATGRID_TA_M.ser',sep ='\s+')
     y = int(input('Unesite godinu: '' '))
     m = int(input('Unesite mesec: '' '))
     
    
-
+                                #UPISIVANJE PODATAKA U FILE#
+                                
     x1 = data1.loc[y,m]
-
-    x_masked, y_masked, t = remove_nan_observations(xp, yp, x1.values)
-    tempx, tempy, temp = interpolate(x_masked, y_masked, t, interp_type='barnes',
-                                 minimum_neighbors=8, search_radius=150000, hres=10000)
-
-    temp = np.ma.masked_where(np.isnan(temp), temp)
-
-    levels = list(range(-20, 20, 1))
-    cmap = plt.get_cmap('viridis')
-    norm = BoundaryNorm(levels, ncolors=cmap.N, clip=True)
-
-    fig = plt.figure(figsize=(20, 10))
-    view = fig.add_subplot(1, 1, 1, projection=to_proj)
-
-    view.set_extent([27.0, 16.9, 49.5, 44.5])
-    view.add_feature(cfeature.STATES.with_scale('50m'))
-    view.add_feature(cfeature.OCEAN)
-    view.add_feature(cfeature.COASTLINE.with_scale('50m'))
-    view.add_feature(cfeature.BORDERS, linestyle=':')
-
-
-    mmb = view.pcolormesh(tempx, tempy, temp, cmap=cmap, norm=norm)
-    fig.colorbar(mmb, shrink=.4, pad=0.02, boundaries=levels)
-    view.set_title('Srednja temperatura')
-    plt.show()
+    test = open('podaci.csv','w')
+    test.write(str(x1))
+    test.close()
     
+                                #SKRiPTA ZA CRTANJE MAPE#
+                            
+#    x_masked, y_masked, t = remove_nan_observations(xp, yp, x1.values)
+#    tempx, tempy, temp = interpolate(x_masked, y_masked, t, interp_type='barnes',
+#                                 minimum_neighbors=8, search_radius=150000, hres=10000)
+#
+#    temp = np.ma.masked_where(np.isnan(temp), temp)
+#
+#    levels = list(range(-20, 20, 1))
+#    cmap = plt.get_cmap('viridis')
+#    norm = BoundaryNorm(levels, ncolors=cmap.N, clip=True)
+#
+#    fig = plt.figure(figsize=(20, 10))
+#    view = fig.add_subplot(1, 1, 1, projection=to_proj)
+#
+#    view.set_extent([27.0, 16.9, 49.5, 44.5])
+#    view.add_feature(cfeature.STATES.with_scale('50m'))
+#    view.add_feature(cfeature.OCEAN)
+#    view.add_feature(cfeature.COASTLINE.with_scale('50m'))
+#    view.add_feature(cfeature.BORDERS, linestyle=':')
+#
+#
+#    mmb = view.pcolormesh(tempx, tempy, temp, cmap=cmap, norm=norm)
+#    fig.colorbar(mmb, shrink=.4, pad=0.02, boundaries=levels)
+#    view.set_title('Srednja temperatura')
+#    plt.show()
+#    
 
 
 def dnevni_podaci():
@@ -100,7 +106,7 @@ def dnevni_podaci():
 
     
     
-    data1 = pd.read_csv('/home/meteorolog/Desktop/Master_rad/CARPATGRID_TA_D.ser',sep ='\s+')
+    data1 = pd.read_csv('/home/martin/Master_rad/CARPATGRID_TA/CARPATGRID_TA_D.ser',sep ='\s+')
     
     
     
@@ -111,31 +117,36 @@ def dnevni_podaci():
    
 
     x1 = data1.loc[y,m,d]
+    test = open('podaci.csv','w')
+    test.write(str(x1))
+    test.close()
+    
+    
 
-    x_masked, y_masked, t = remove_nan_observations(xp, yp, x1.values)
-    tempx, tempy, temp = interpolate(x_masked, y_masked, t, interp_type='barnes',
-                                 minimum_neighbors=8, search_radius=150000, hres=30000)
-
-    temp = np.ma.masked_where(np.isnan(temp), temp)
-
-    levels = list(range(-20, 20, 1))
-    cmap = plt.get_cmap('viridis')
-    norm = BoundaryNorm(levels, ncolors=cmap.N, clip=True)
-
-    fig = plt.figure(figsize=(20, 10))
-    view = fig.add_subplot(1, 1, 1, projection=to_proj)
-
-    view.set_extent([27.0, 16.9, 49.5, 44.5])
-    view.add_feature(cfeature.STATES.with_scale('50m'))
-    view.add_feature(cfeature.OCEAN)
-    view.add_feature(cfeature.COASTLINE.with_scale('50m'))
-    view.add_feature(cfeature.BORDERS, linestyle=':')
-
-
-    mmb = view.pcolormesh(tempx, tempy, temp, cmap=cmap, norm=norm)
-    fig.colorbar(mmb, shrink=.4, pad=0.02, boundaries=levels)
-    view.set_title('Srednja temperatura')
-    plt.show()
+#    x_masked, y_masked, t = remove_nan_observations(xp, yp, x1.values)
+#    tempx, tempy, temp = interpolate(x_masked, y_masked, t, interp_type='barnes',
+#                                 minimum_neighbors=8, search_radius=150000, hres=30000)
+#
+#    temp = np.ma.masked_where(np.isnan(temp), temp)
+#
+#    levels = list(range(-20, 20, 1))
+#    cmap = plt.get_cmap('viridis')
+#    norm = BoundaryNorm(levels, ncolors=cmap.N, clip=True)
+#
+#    fig = plt.figure(figsize=(20, 10))
+#    view = fig.add_subplot(1, 1, 1, projection=to_proj)
+#
+#    view.set_extent([27.0, 16.9, 49.5, 44.5])
+#    view.add_feature(cfeature.STATES.with_scale('50m'))
+#    view.add_feature(cfeature.OCEAN)
+#    view.add_feature(cfeature.COASTLINE.with_scale('50m'))
+#    view.add_feature(cfeature.BORDERS, linestyle=':')
+#
+#
+#    mmb = view.pcolormesh(tempx, tempy, temp, cmap=cmap, norm=norm)
+#    fig.colorbar(mmb, shrink=.4, pad=0.02, boundaries=levels)
+#    view.set_title('Srednja temperatura')
+#    plt.show()
     
 
 def kordinate_tacke():
