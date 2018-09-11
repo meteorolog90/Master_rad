@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.8.28)  11 SEP 2018 16:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.8.28)  11 SEP 2018 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -978,33 +978,45 @@ File: Screenshot.png Graphic file (type png)
  <use Screenshot.png>
 Package pdftex.def Info: Screenshot.png used on input line 141.
 (pdftex.def)             Requested size: 418.25368pt x 52.7022pt.
- [6 <./Screenshot.png>]
-Overfull \hbox (22.04916pt too wide) in paragraph at lines 159--160
+ [6 <./Screenshot.png>] <pandas-series.jpg, id=129, 160.6pt x 119.44624pt>
+File: pandas-series.jpg Graphic file (type jpg)
+
+<use pandas-series.jpg>
+Package pdftex.def Info: pandas-series.jpg used on input line 165.
+(pdftex.def)             Requested size: 167.2989pt x 124.43257pt.
+ <pandas-dataframe.jpg, id=130, 536.0025pt x 168.63pt>
+File: pandas-dataframe.jpg Graphic file (type jpg)
+
+<use pandas-dataframe.jpg>
+Package pdftex.def Info: pandas-dataframe.jpg used on input line 171.
+(pdftex.def)             Requested size: 334.60422pt x 105.2674pt.
+
+Overfull \hbox (22.04916pt too wide) in paragraph at lines 187--188
 []\OT1/jkp/m/n/12 Metpy pred-sta-vlja ko-lek-ciju alata u Pyt-honu za pre-gled,
  vi-zu-i-li-za-ciju i prora[]cuna
  []
 
-
-Overfull \hbox (16.6404pt too wide) in paragraph at lines 163--164
+[7 <./pandas-series.jpg> <./pandas-dataframe.jpg>]
+Overfull \hbox (16.6404pt too wide) in paragraph at lines 191--192
 \OT1/jkp/m/n/12 Instaliranjem ovog pa-keta do-bi-jamo ra-zne alate, nama []ce n
 ajvi[]se zna[]citi mogu[]cnost
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
-[7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
+[8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
  (./Master_rad.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
 Package rerunfilecheck Info: File `Master_rad.out' has not changed.
 (rerunfilecheck)             Checksum: 58EF1140AAFDF71A61D7E039DD850E34;437.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
  ) 
 Here is how much of TeX's memory you used:
- 12626 strings out of 493013
- 180740 string characters out of 6135682
+ 12647 strings out of 493013
+ 181101 string characters out of 6135682
  272625 words of memory out of 5000000
- 15896 multiletter control sequences out of 15000+600000
+ 15908 multiletter control sequences out of 15000+600000
  40084 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,8n,77p,901b,1291s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1015,10 +1027,10 @@ ype1/public/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfont
 s/jkpsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpttmn8a
 .pfb>
-Output written on Master_rad.pdf (9 pages, 138970 bytes).
+Output written on Master_rad.pdf (10 pages, 174325 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 58 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 188 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

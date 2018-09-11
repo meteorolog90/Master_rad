@@ -147,11 +147,39 @@ Za numeričke proračune, nizovi kod NumPy su dosta efikasniji prilikom njihove 
  conda install numpy
 \end{lstlisting}
  Ažuriranje novije verzije se radi na sledeći način:
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
  conda update numpy
 \end{lstlisting}
 \subsection{Pandas}
-Pandas je dizajniran kako bi se ubrzao rad sa strukturiranim ili tabelarnim podacima i kao takav, postao jako moćna i produktivna alatka za analizu podataka. Sadrži sve osobine NumPy s mogućnošćom brže i efikasnije manupulacije bazom podataka. Brzo i lako indeksiranje, preoblikovanje, sečenje, spajanje, brisanje su samo od nekih mogućnosti koje pruža ova biblioteka u radu sa podacima. Instaliranje pandas biblioteke:
+Pandas je dizajniran kako bi se ubrzao rad sa strukturiranim ili tabelarnim podacima i kao takav, postao jako moćna i produktivna alatka za analizu podataka. Neke od mogućnosti koje pruža ova biblioteka su:
+\begin{itemize}
+  \item ulaz-izlaz podataka u različitim formatima (csv, txt, SQL...)
+  \item indeksiranje, sortiranje, rangiranje
+  \item čišćenje podataka 
+  \item grupisanje
+  \item vizuelizacija
+\end{itemize}
+Sačinjenja je od dve strukture podataka, \textsl{dataframe} i \textsl{series}.  \textsl{Series} predstavljaju jednodimenzioni objekat sačinjen od tabele sa vrednostima i njihovim indeksima. 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.4\textwidth]{pandas-series.jpg}
+\caption*{\textsl{Slika 5. Pandas series }}
+\end{figure}
+\textsl{Dataframe} predstavlja tabelarnu strukturu podataka, definisanih u dve ili više dimenzije.  Sačinjen je od tri osnovne komponente: podataka, indeksa, kolona. 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{pandas-dataframe.jpg}
+\caption*{\textsl{Slika 6. Pandas dataframe }}
+\end{figure}
+Skraćenjica za \textsl{pandas} je \textsl{pd}, poziva se korišćenjem komande:
+\begin{lstlisting}[language=Python]
+ import pandas as pd 
+\end{lstlisting}
+Kao primer uzeću mogućnost ubacivanja podataka iz textsl{.csv} dokumenta, to se radi na sledeći način:
+\begin{lstlisting}[language=Python]
+ df = pd.csv_read('ime_dokumenta.csv')
+\end{lstlisting}
+Instaliranje pandas biblioteke:
 \begin{lstlisting}
  conda install pandas
 \end{lstlisting}

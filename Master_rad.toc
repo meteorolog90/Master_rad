@@ -5,4 +5,4 @@
 \contentsline {section}{\numberline {2}Kori\IeC {\v s}\IeC {\'c}enje biblioteka}{5}{section.2}
 \contentsline {subsection}{\numberline {2.1}NumPy}{6}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Pandas}{6}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}MetPy}{7}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}MetPy}{8}{subsection.2.3}
