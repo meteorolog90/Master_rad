@@ -1,0 +1,8 @@
+\select@language {serbian}
+\contentsline {section}{\numberline {1}Postupak za instaliranje}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Provera verzije pythona}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Izbegavanje problema sa dve verzije}{4}{subsection.1.2}
+\contentsline {section}{\numberline {2}Kori\IeC {\v s}\IeC {\'c}enje biblioteka}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}NumPy}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Pandas}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}MetPy}{7}{subsection.2.3}
