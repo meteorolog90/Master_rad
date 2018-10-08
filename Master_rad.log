@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.10.8)  8 OCT 2018 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.10.8)  9 OCT 2018 01:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -878,13 +878,13 @@ LaTeX Info: Redefining \nameref on input line 15.
 \@outlinefile=\write3
 \openout3 = `Master_rad.out'.
 
- <PMF.jpg, id=52, 200.75pt x 196.735pt>
+ <PMF.jpg, id=64, 200.75pt x 196.735pt>
 File: PMF.jpg Graphic file (type jpg)
 
 <use PMF.jpg>
 Package pdftex.def Info: PMF.jpg used on input line 20.
 (pdftex.def)             Requested size: 125.47737pt x 122.97105pt.
- <uns.jpg, id=53, 289.08pt x 287.0725pt>
+ <uns.jpg, id=65, 289.08pt x 287.0725pt>
 File: uns.jpg Graphic file (type jpg)
  <use uns.jpg>
 Package pdftex.def Info: uns.jpg used on input line 21.
@@ -925,107 +925,122 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.47 \newpage
-              [2] [1] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
+              [2] [1] [2] [3] <Screenshot.png, id=109, 501.875pt x 63.23625pt>
+File: Screenshot.png Graphic file (type png)
 
- []
-
-[3]
-LaTeX Font Info:    Try loading font information for TS1+jkp on input line 77.
+<use Screenshot.png>
+Package pdftex.def Info: Screenshot.png used on input line 80.
+(pdftex.def)             Requested size: 418.25368pt x 52.7022pt.
+LaTeX Font Info:    Try loading font information for TS1+jkp on input line 95.
  (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ts1jkp.fd
 File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
-)
-Overfull \hbox (0.5659pt too wide) in paragraph at lines 85--86
-\OT1/jkp/m/n/12 stra-nica. Ovu oso-binu mu omogu[]cava ar-hi-tek-tura MVC(\OT1/
-jkp/m/sl/12 model-view-controller\OT1/jkp/m/n/12 )
- []
-
-[4]
-LaTeX Font Info:    Try loading font information for OT1+jkptt on input line 90
-.
- (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkptt.fd
-File: ot1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for OT1/jkptt.
-)
-Overfull \hbox (4.03474pt too wide) in paragraph at lines 112--113
-[]\OT1/jkp/m/n/12 Prvo pro-ve-ra-vamo da li imamo in-sta-li-ran pyt-hon ku-ca-n
-jem slede[]ce ko-mande: 
- []
-
-<python.png, id=100, 528.47438pt x 271.0125pt>
-File: python.png Graphic file (type png)
- <use python.png>
-Package pdftex.def Info: python.png used on input line 119.
-(pdftex.def)             Requested size: 418.25368pt x 214.49037pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5]
-Overfull \hbox (1.99564pt too wide) in paragraph at lines 129--130
-\OT1/jkp/m/n/12 slede[]ce. Kod mene, ja ko-ri-stim MX li-nux di-stri-bu-ciju ba
--zi-ranu na De-bian(stable)
- []
-
-<python3.png, id=124, 408.02437pt x 52.69687pt>
-File: python3.png Graphic file (type png)
- <use python3.png>
-Package pdftex.def Info: python3.png used on input line 136.
-(pdftex.def)             Requested size: 418.25368pt x 54.02106pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6 <./python.png>] <python2.png, id=137, 384.6872pt x 63.98906pt>
-File: python2.png Graphic file (type png)
-
-<use python2.png>
-Package pdftex.def Info: python2.png used on input line 146.
-(pdftex.def)             Requested size: 418.25368pt x 69.57776pt.
- [7 <./python3.png> <./python2.png>]
-<Screenshot.png, id=152, 501.875pt x 63.23625pt>
-File: Screenshot.png Graphic file (type png)
- <use Screenshot.png>
-Package pdftex.def Info: Screenshot.png used on input line 165.
-(pdftex.def)             Requested size: 418.25368pt x 52.7022pt.
- [8 <./Screenshot.png>] <pandas-series.jpg, id=164, 160.6pt x 119.44624pt>
+) <pandas-series.jpg, id=110, 160.6pt x 119.44624pt>
 File: pandas-series.jpg Graphic file (type jpg)
-
-<use pandas-series.jpg>
-Package pdftex.def Info: pandas-series.jpg used on input line 189.
+ <use pandas-series.jpg>
+Package pdftex.def Info: pandas-series.jpg used on input line 104.
 (pdftex.def)             Requested size: 167.2989pt x 124.43257pt.
- <pandas-dataframe.jpg, id=165, 536.0025pt x 168.63pt>
+
+<pandas-dataframe.jpg, id=111, 536.0025pt x 168.63pt>
 File: pandas-dataframe.jpg Graphic file (type jpg)
 
 <use pandas-dataframe.jpg>
-Package pdftex.def Info: pandas-dataframe.jpg used on input line 195.
+Package pdftex.def Info: pandas-dataframe.jpg used on input line 110.
 (pdftex.def)             Requested size: 334.60422pt x 105.2674pt.
- [9 <./pandas-series.jpg> <./pandas-dataframe.jpg>]
-Overfull \hbox (22.04916pt too wide) in paragraph at lines 214--215
+ [4 <./Screenshot.png>] [5 <./pandas-series.jpg> <./pandas-dataframe.jpg>]
+Overfull \hbox (22.04916pt too wide) in paragraph at lines 129--130
 []\OT1/jkp/m/n/12 Metpy pred-sta-vlja ko-lek-ciju alata u Pyt-honu za pre-gled,
  vi-zu-i-li-za-ciju i prora[]cuna
  []
 
 
-Overfull \hbox (16.6404pt too wide) in paragraph at lines 218--219
+Overfull \hbox (16.6404pt too wide) in paragraph at lines 133--134
 \OT1/jkp/m/n/12 Instaliranjem ovog pa-keta do-bi-jamo ra-zne alate, nama []ce n
 ajvi[]se zna[]citi mogu[]cnost
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
-[10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
+
+ []
+
+[6]
+Overfull \hbox (0.5659pt too wide) in paragraph at lines 154--155
+\OT1/jkp/m/n/12 stra-nica. Ovu oso-binu mu omogu[]cava ar-hi-tek-tura MVC(\OT1/
+jkp/m/sl/12 model-view-controller\OT1/jkp/m/n/12 )
+ []
+
+<django.jpeg, id=143, 744.7825pt x 357.335pt>
+File: django.jpeg Graphic file (type jpg)
+ <use django.jpeg>
+Package pdftex.def Info: django.jpeg used on input line 162.
+(pdftex.def)             Requested size: 250.95476pt x 120.4018pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (2.4139pt too wide) in paragraph at lines 167--168
+\OT1/jkp/m/n/12 okru[]zenju klasa(engl. \OT1/jkp/m/sl/12 class\OT1/jkp/m/n/12 )
+ i odre[]duje va-ri-ja-ble i me-tode pri-dru[]zene odre[]denim
+ []
+
+[7] [8 <./django.jpeg>]
+LaTeX Font Info:    Try loading font information for OT1+jkptt on input line 17
+4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkptt.fd
+File: ot1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for OT1/jkptt.
+)
+Overfull \hbox (4.03474pt too wide) in paragraph at lines 196--197
+[]\OT1/jkp/m/n/12 Prvo pro-ve-ra-vamo da li imamo in-sta-li-ran pyt-hon ku-ca-n
+jem slede[]ce ko-mande: 
+ []
+
+<python.png, id=156, 528.47438pt x 271.0125pt>
+File: python.png Graphic file (type png)
+ <use python.png>
+Package pdftex.def Info: python.png used on input line 203.
+(pdftex.def)             Requested size: 418.25368pt x 214.49037pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9]
+Overfull \hbox (1.99564pt too wide) in paragraph at lines 213--214
+\OT1/jkp/m/n/12 slede[]ce. Kod mene, ja ko-ri-stim MX li-nux di-stri-bu-ciju ba
+-zi-ranu na De-bian(stable)
+ []
+
+<python3.png, id=178, 408.02437pt x 52.69687pt>
+File: python3.png Graphic file (type png)
+ <use python3.png>
+Package pdftex.def Info: python3.png used on input line 220.
+(pdftex.def)             Requested size: 418.25368pt x 54.02106pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./python.png>] <python2.png, id=191, 384.6872pt x 63.98906pt>
+File: python2.png Graphic file (type png)
+
+<use python2.png>
+Package pdftex.def Info: python2.png used on input line 230.
+(pdftex.def)             Requested size: 418.25368pt x 69.57776pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
+ [11 <./python3.png> <./python2.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
  (./Master_rad.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
 Package rerunfilecheck Info: File `Master_rad.out' has not changed.
-(rerunfilecheck)             Checksum: B1B552D008C1D46908382FDE1CB482FD;739.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
+(rerunfilecheck)             Checksum: A4A647A2732B1BB520DE87054FCC0A50;1000.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 242.
  ) 
 Here is how much of TeX's memory you used:
- 12663 strings out of 493061
- 181305 string characters out of 6137744
+ 12677 strings out of 493061
+ 181590 string characters out of 6137744
  272233 words of memory out of 5000000
- 15902 multiletter control sequences out of 15000+600000
+ 15909 multiletter control sequences out of 15000+600000
  41982 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,8n,77p,918b,1175s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1036,10 +1051,10 @@ ist/fonts/type1/public/kpfonts/jkpbn8a.pfb></usr/share/texlive/texmf-dist/fonts
 ic/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfont
 s/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on Master_rad.pdf (12 pages, 183605 bytes).
+Output written on Master_rad.pdf (13 pages, 205381 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 192 compressed objects within 2 object streams
- 72 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 251 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
