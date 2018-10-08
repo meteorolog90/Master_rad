@@ -7,4 +7,4 @@
 \contentsline {subsection}{\numberline {3.1}NumPy}{5}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Pandas}{6}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Matplotlib}{7}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}MetPy}{7}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.4}MetPy}{8}{subsection.3.4}
