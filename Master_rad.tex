@@ -67,12 +67,24 @@ Najosnovnije korišćenje Pythona je kao jezik skriptovanja i automatizacije, ko
 
 \subsection{Django}
 
-Nagla ekspanzija interneta praćenja je i povećanjem popularnosti web aplikacija. Google, Facebook, YouTube su samo od nekih popularnih web aplikacija koje čine svakodnevnicu pretraživanja. Web aplikacija je u stvari program, kojim pristupamo pomoću internet pretraživača(browser). Ovakav pristup omogućava veću bezbednost, sigurnost bez potrebu za instaliranjem na operativni sistem. Sve što vam je potrebno kako bi pristupili programu je uređaj koji ima dostupnost interneta. 
-Usled spomenutog naglog rasta popularnosti web aplikacija, javila je potreba za brzim i automatizovanim načinom njihove izrade. Tako je nastao Django, web framework napisan u Python-u i služi za izradu web stranica i aplikacija.
+Nagla ekspanzija interneta praćenja je i povećanjem popularnosti web aplikacija. Google, Facebook, YouTube su samo od nekih popularnih web aplikacija koje čine svakodnevnicu pretraživanja. Web aplikacija je u stvari program, kojim pristupamo pomoću internet pretraživača(browser). Ovakav pristup omogućava veću bezbednost, sigurnost bez potrebu za instaliranjem na operativni sistem. Sve što vam je potrebno kako bi pristupili programu je uređaj koji ima pristup internetu. 
+Usled spomenutog naglog rasta popularnosti web aplikacija, javila je potreba za brzim i automatizovanim načinom njihove izrade. Tako je nastao Django, web framework napisan u Python-u i služi za izradu web stranica i aplikacija. \\
 
+Razvijan je od 2003. godine od strane novinara, koji su zahtevali brz razvoj web stranica. Kao slobodni softver(eng. \textsl{open source}) objavljen je 2005. godine, kada je i dobio ime Django po jazz gitaristi Djangu Reinhardtu. Od 2008. godine za razvoj Django frameworka zadužena je \textsl{Django Software Foundation}.
+Django je zapravo skup alata i biblioteka koje programerima web aplikacija olakšavaju 
+izradu i brigu o povezivanju svih njenih delova. Dizajniran je kako bi se skratilo vreme potrebno za izradu web aplikacije, držeći se strogih zahteva iskusnih web programera koji su ga stvorili. Web programiranje zahteva ponavljanje isti zadataka kao što su :
+\begin{itemize}
+\item korisnička prava
+\item registracija korisnika
+\item konfigurisanje URL-ova
+\item validacija unesenih podataka
+\item administracija sajta
+\end{itemize}
+Pošto se Django bazira na Python-u pisanje ovakvog koda sadrži nekoliko linija. U drugim programskim jezicima takvi zadaci predstavljaju mukotrpan proces zahtevajući dosta vremena. 
 \subsubsection{Django arhitektura}
-Kao što je rečeno, Django služi za brzu i jednostavnu izradu web aplikacija i stranica.  Ovu osobinu mu daje i glavni princip na kome se zasniva razvoj aplikacija u Djangu, a to je osobina ''Ne ponavljati sebe'' (eng. \textsl{Dont repeat yourself}). 
+Kao što je rečeno, Django služi za brzu i jednostavnu izradu web aplikacija i stranica.  Ovu osobinu mu omogućava arhitektura MVC(\textsl{model-view-controller}) na kojoj se bazira, i koja će biti ovde ukratko opisana. 
 
+\newpage
 \section{Postupak za instaliranje}
 Python kao programski jezik postoji za sve tri popularne sistemske platforme Windows,Linux i OSX. Ovde će biti prikazan postupak instaliranja potrebnih paketa za rad pod Linux operativnim sistemom. Konkretno ćemo raditi na distribuciji baziranoj na Debian(stable) paketima, međutim za ostale distribucije poput Suse, Fedora, Arch postupak je sličan.
 Prvo što treba da uradimo jeste da odemo na \url{https://www.anaconda.com/download/#linux} i preuzmemo $Anaconda3-5.2.0-Linux-x86{\_64}.sh$\footnote{U pitanju je trenutna verzija}. U pitanju je \textsl{shell} skripta koja se pokreće u terminalu na sledeći način: 
