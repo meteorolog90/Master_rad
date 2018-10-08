@@ -1,10 +1,13 @@
 \select@language {serbian}
-\contentsline {section}{\numberline {1}Python i Django}{2}{section.1}
-\contentsline {section}{\numberline {2}Postupak za instaliranje}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Provera verzije pythona}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Izbegavanje problema sa dve verzije}{4}{subsection.2.2}
-\contentsline {section}{\numberline {3}Kori\IeC {\v s}\IeC {\'c}enje biblioteka}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}NumPy}{5}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Pandas}{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Matplotlib}{7}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}MetPy}{8}{subsection.3.4}
+\contentsline {section}{\numberline {1}Kori\IeC {\v s}\IeC {\'c}eni alati}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Python}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Django}{3}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Django arhitektura}{3}{subsubsection.1.2.1}
+\contentsline {section}{\numberline {2}Postupak za instaliranje}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Provera verzije pythona}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Izbegavanje problema sa dve verzije}{5}{subsection.2.2}
+\contentsline {section}{\numberline {3}Kori\IeC {\v s}\IeC {\'c}enje biblioteka}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}NumPy}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Pandas}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Matplotlib}{9}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}MetPy}{9}{subsection.3.4}

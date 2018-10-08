@@ -1,9 +1,12 @@
-\BOOKMARK [1][-]{section.1}{Python i Django}{}% 1
-\BOOKMARK [1][-]{section.2}{Postupak za instaliranje}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Provera verzije pythona}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Izbegavanje problema sa dve verzije}{section.2}% 4
-\BOOKMARK [1][-]{section.3}{Kori\235cenje biblioteka}{}% 5
-\BOOKMARK [2][-]{subsection.3.1}{NumPy}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.2}{Pandas}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.3}{Matplotlib}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.4}{MetPy}{section.3}% 9
+\BOOKMARK [1][-]{section.1}{Kori\235ceni alati}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Python}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Django}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Django arhitektura}{subsection.1.2}% 4
+\BOOKMARK [1][-]{section.2}{Postupak za instaliranje}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Provera verzije pythona}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Izbegavanje problema sa dve verzije}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Kori\235cenje biblioteka}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{NumPy}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Pandas}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Matplotlib}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.4}{MetPy}{section.3}% 12
