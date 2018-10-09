@@ -70,13 +70,15 @@ Najosnovnije korišćenje Pythona je kao jezik skriptovanja i automatizacije, ko
 Mnoge python funkcije su sadržane u specijalizovanim bibliotekama, tzv. modulima. Učitavanje modula se postiže naredbom \textsl{import}. Ova mogućnost je pythonu donela popularnost jer postoje monogo modula koji jako pomažu prilikom rada. Python je provo svoju popularnost stekao pri izradi veb programa međutim usavršavanjem podrške za dodtane module otvorilo je vrata pythonu i u drugim oblastima. Moduli poput \textsl{numpy} i \textsl{pandas}, koji se koriste za analizu i vizuelno prikazivanje podataka, su python svrstali uz rame sa ostalim kako komercijalnim programima tako i sa programima otvorenog koda kao što su R, MATLAB, SAS, Stata i ostali. Kada pogledamo da python spada u besplatni programski jezik, njegova popularnost nije slučajnost. Jedan deo ove popularnosti u obradi podataka pripada i laka integracija sa C, C++ i FORTRAN kodom.  
 Pošto su moduli jako značajni za python istaći ćemo neke od naznačajnijih. Samo da napomene, sve nabrojane mogućnosti koje pružaju biblioteke je moguće izvesti koristeći isključivo samo Pythonov kod. Prednost biblioteka je u efikasnosti i lakoći kojim se postižu isti rezultati, uz manje utrošenog vremena. Jedna od značajnih biblioteka otvorenog koda je i SciKit. Ona sadrži različite klase objekata za kasifikaciju, algoritme mašinskog učenja (engl. \textsl{Machine Learning}).  U SciKit paketu se nalaze  NumPy i SciPy biblioteke koje sadrže klase za razne standardne matematičke i numeričke funkcije. 
 \subsubsection{Scipy}
- Scipy (engl. \textsl{Scientific Python}) proširuje funkcionalnost Numpy-a sa značajnom zbirkom algoritama za Fourijeovu transformaciju, regresiju i druge matematičke tehnike.  Sadrži sledeće module :
+ Scipy (engl. \textsl{Scientific Python}) proširuje funkcionalnost Numpy-a sa značajnom zbirkom algoritama za Fourijeovu transformaciju, regresiju i druge matematičke tehnike.  Sadrži neke od sledećih modula :
  \begin{itemize}
  \item scipy.integrate - integraciija funkcija
  \item scipy.special - specijalne funkcije
 \item scipy.optimize - optimizacija
 \item scipy. interpolate - interpolacija
+
 \end{itemize}
+Nama od značaja će biti modul za interpolaciju.
 \subsubsection{Numpy}
 NumPy (\textsl{Numerical Python}) predstavlja fundamentalnu open source Python biblioteku kada su obzir uzmu numerički proračuni. Sadrži matematičke funkcije zadužene za operaciju na podacima, koje se veoma brzo i efikasno izvršavaju. Poziva se komandom : 
 \begin{lstlisting}
