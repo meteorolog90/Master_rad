@@ -74,7 +74,7 @@ Pošto su moduli jako značajni za python istaći ćemo neke od naznačajnijih. 
  \begin{itemize}
  \item scipy.integrate - integraciija funkcija
  \item scipy.special - specijalne funkcije
-\item scipy.optimize - optimizacija
+\item scipy.optimize - optimizacija--
 \item scipy. interpolate - interpolacija
 
 \end{itemize}
@@ -113,7 +113,7 @@ Instaliranjem ovog paketa dobijamo razne alate, nama će najviše značiti mogu�
 \subsection{Django}
 
 Nagla ekspanzija interneta praćenja je i povećanjem popularnosti web aplikacija. Google, Facebook, YouTube su samo od nekih popularnih web aplikacija koje čine svakodnevnicu pretraživanja. Web aplikacija je u stvari program, kojim pristupamo pomoću internet pretraživača(browser). Ovakav pristup omogućava veću bezbednost, sigurnost bez potrebu za instaliranjem na operativni sistem. Sve što vam je potrebno kako bi pristupili programu je uređaj koji ima pristup internetu. 
-Usled spomenutog naglog rasta popularnosti web aplikacija, javila je potreba za brzim i automatizovanim načinom njihove izrade. Tako je nastao Django, web framework napisan u Python-u i služi za izradu web stranica i aplikacija. \\
+Usled spomenutog naglog rasta popularnosti web aplikacija, javila je potreba za brzim i automatizovanim načinom njihove izrade. Tako je nastao Django, web framework napisan u Python-u i služi za izradu web stranica i aplikacija. 
 
 Razvijan je od 2003. godine od strane novinara, koji su zahtevali brz razvoj web stranica. Kao slobodni softver(eng. \textsl{open source}) objavljen je 2005. godine, kada je i dobio ime Django po jazz gitaristi Djangu Reinhardtu. Od 2008. godine za razvoj Django frameworka zadužena je \textsl{Django Software Foundation}.
 Django je zapravo skup alata i biblioteka koje programerima web aplikacija olakšavaju 
@@ -127,7 +127,7 @@ izradu i brigu o povezivanju svih njenih delova. Dizajniran je kako bi se skrati
 \end{itemize}
 Pošto se Django bazira na Python-u pisanje ovakvog koda sadrži nekoliko linija. U drugim programskim jezicima takvi zadaci predstavljaju mukotrpan proces zahtevajući dosta vremena. 
 \subsubsection{Django arhitektura}
-Kao što je rečeno, Django služi za brzu i jednostavnu izradu web aplikacija i stranica.  Ovu osobinu mu omogućava arhitektura MVC(\textsl{model-view-controller}) na kojoj se bazira, i koja razdvaja logiku same aplikacije od prikazanog dela aplikacije. Možemo je podeliti na tri dela:
+Kao što je rečeno, Django služi za brzu i jednostavnu izradu web stranica i aplikacija.  Ovu osobinu mu omogućava arhitektura MVC(\textsl{model-view-controller}) na kojoj se bazira, i koja razdvaja logiku same aplikacije od prikazanog dela aplikacije. Možemo je podeliti na tri dela:
 \begin{itemize}
 \item Model 
 \item View (Pogled)
@@ -139,81 +139,38 @@ Kao što je rečeno, Django služi za brzu i jednostavnu izradu web aplikacija i
 \caption*{\textsl{Slika 1. Koncept modela MVC }}
 \end{figure}
 Pune linije predstavljaju vezu izmedju navedenih elemenata za razmenu podataka, dok isprekidane linije predstavljaju vezu kod koje neki drugi objekt vrši tu funkciju. Django koristi drugačije nazive elemenata MVC-a. Tako \textsl{view} predstavlja kontroler, a \textsl{template} (šablon) predstavlja \textsl{view} iz MVC-a pa implementaciju MVC-a možem za Django zvati kao MTV (\textsl{model-template-view}).  Ova promena je objašnjena na takav način što kod Djanga pogled predstavlja podatke koji se prezentuju dok šablon način na koji se podaci prikazuju. 
-\subsubsection{Model}
-Model je zadužen za komunikaciju sa bazom podataka. Model je u Django okruženju klasa(engl. \textsl{class}) i određuje varijable i metode pridružene određenim tipovima podata. Pridružene varijable predstavljaju kolone u tablici dok metode definišu relacije između varijabli.  Ulog modela je da dohvati tražene podatke i prosledi ih ka pogledu.  Model nema informacija o šablonima i funkcijama izvedenih u pogledima.
-\subsubsection{View}(Pogled)
-Uloga pogleda je prikazivanje podataka dohvaćenih iz baze podataka u internet pretraživaču. Priliko izrade web stranice, svaka kreirana aplikacija ima svoj pogled.  Pogled u stvari sačinjavaju funckije u Pytho programskom jeziku.  Ove funkcije imaju ulogu prenosnika podataka koji će biti prikazani. 
-\subsubsection{Template}(Pregle)
+
+Model je zadužen za komunikaciju sa bazom podataka. Model je u Django okruženju klasa(engl. \textsl{class}) i određuje varijable i metode pridružene određenim tipovima podata. Pridružene varijable predstavljaju kolone u tablici dok metode definišu relacije između varijabli.  Ulog modela je da dohvati tražene podatke i prosledi ih ka pogledu.  Model nema informacija o šablonima i funkcijama izvedenih u pogledima. 
+
+Uloga pogleda je prikazivanje podataka dohvaćenih iz baze podataka u internet pretraživaču. Priliko izrade web stranice, svaka kreirana aplikacija ima svoj pogled.  Pogled u stvari sačinjavaju funckije u Pytho programskom jeziku.  Ove funkcije imaju ulogu prenosnika podataka koji će biti prikazani.  
+
 Pregled je HTML stranica s dodatnim strukturama koje omogućavaju prikaz podataka koji su poslati od pogleda.  Uloga pregleda je da sadržaj poslat od strane pogleda ugradi u HTML kod, koji će se prikazati u internet pretraživaču. 
 
 \newpage
 \section{Postupak za instaliranje}
-Python kao programski jezik postoji za sve tri popularne sistemske platforme Windows,Linux i OSX. Ovde će biti prikazan postupak instaliranja potrebnih paketa za rad pod Linux operativnim sistemom. Konkretno ćemo raditi na distribuciji baziranoj na Debian(stable) paketima, međutim za ostale distribucije poput Suse, Fedora, Arch postupak je sličan.
-Prvo što treba da uradimo jeste da odemo na \url{https://www.anaconda.com/download/#linux} i preuzmemo $Anaconda3-5.2.0-Linux-x86{\_64}.sh$\footnote{U pitanju je trenutna verzija}. U pitanju je \textsl{shell} skripta koja se pokreće u terminalu na sledeći način: 
+\subsection{Instaliranje Python3 verzije }
+Django je pisan u Python-u i kako bi ga koristili potrebno je imati instaliran Python. Python kao programski jezik postoji za sve tri popularne sistemske platforme Windows, Linux i OSX. Ovde će biti prikazan postupak instaliranja potrebnih paketa za rad pod Linux operativnim sistemom. Gotov sve distibucije linuxa dolaze sa instaliranim Python-om, razlika može biti u verziji. Postoje dve verzije, starija 2.7 verzija koja je podržana do kraja 2020. godine, i novija verzija 3.6. U radu je korišćena verzija 3.5. Proveru verzije radimo tako što otvorimo terminal i kucamo sledeću komandu : 
 \begin{lstlisting}
- bash Anaconda3-5.2.0-Linux-x86_64.sh
+ python3 --version
 \end{lstlisting}
-Nakon što se prihvati licenca određujemo gde da instaliramo Anacondu, najbolje je da se ostavi podrazumevana putanja $/home/USER/anaconda$. Nakon završene instalacije najbolje je uraditi modifikaciju \textsl{.bashrc} dodavanjem sledeće putanje:
+Ukoliko je Python verzije 3.6 instaliran, pojavi se sledeće
 \begin{lstlisting}
- export PATH=/home/$USER/anaconda/bin:$PATH
+ Python 3.6.6
 \end{lstlisting}
-Nakon ovoga uspešno smo instalirali anacondu koju ćemo koristi za instaliranje odnosno ažuriranje Python paketa. Paketi se uz pomoć Anaconde instaliraju upisivanjem sledeće komande u terminal:
-\begin{lstlisting}
- conda install ime_paketa 
-\end{lstlisting}
-Za ažuriranje paketa koristi se sledeća komanda:
-\begin{lstlisting}
- conda update ime_paketa 
-\end{lstlisting}
-Postoji još jedan metod kojim se mogu instalirati paketi, a to je uz pomoć komande \textsl{pip}:
-\begin{lstlisting}
- pip install ime_paketa 
-\end{lstlisting}
-Međutim, jako bitno je istaći da ne treba mešati ova dva metoda za instaliranje paketa. Najbolje je da se izabere jedan od njih i uvek koristi, jer mogu nastati problemi ako se koriste oba metoda. 
- \subsection{Provera verzije pythona}
-Prvo proveravamo da li imamo instaliran python kucanjem sledeće komande:
-\begin{lstlisting}
- python 
-\end{lstlisting}
-Ukoliko je python instaliran pojavi se sledeće
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1.\linewidth]{python.png}
-\caption*{\textsl{Slika 1. Pokretanje pythona}}
+\caption*{\textsl{Slika 2. Python verzije 3.6 pokrenut iz terminala}}
 \end{figure}
-Uglavnom sve distribucije linuxa dolaze sa instaliranim pythonom, razlika može biti u verziji. Postoje dve verzije pythona, 2.7 čija podrška polako prestaje i novija 3.x (trenutna je 3.6.6). Razlike između ove dve verzije postoje, ali metpy biblioteka koja nama je potrebna podržava obe verzije. Više o razlikama između ove dve verzije pogledajte na \url{https://wiki.python.org/moin/Python2orPython3}. Koja verzija pythona je instalirana možemo proveriti i kucanjem sledećeg koda u terminal:
+Ukoliko nemate instaliran Python verzije 3.6, možete ga instalirati :
 \begin{lstlisting}
- python --version
- Python 3.6.6
-\end{lstlisting}  
-U buduće svaki kod će biti vezan za ovu verziju.
-\subsection{Izbegavanje problema sa dve verzije}
-Kao što sam već spomenuo sve linux distribucija dolaze sa instaliranim pythonom, razlike mogu biti u verziji. Ukoliko vaša linux distribucija ima instaliranu samo verziju 2.7 a vi bi hteli i verziju 3.x, onda treba obratiti pažnju na sledeće. Kod mene, ja koristim MX linux distribuciju baziranu na Debian(stable) verziji, kucanjem u terminalu:
-\begin{lstlisting}
- python --version
- Python 3.6.6
-\end{lstlisting}  
-\begin{figure}[h!]
-\centering
-\includegraphics[width=1.\linewidth]{python3.png}
-\caption*{\textsl{Slika 2. Pokretanje pythona verzije 3.6.6}}
-\end{figure}
-prikazuje da je podrazumevana verzija 3.6. Međutim, ukoliko je kod vas instalirana samo verzija 2.7 a vi dodatno instalirante verziju 3.x, može se desiti da će verzija 2.7 i dalje ostati podrazumevana, pa se prilikom kompajliranja može javiti problem. Pošto su kod mene obe vezije, kao podrazumevana verzija je 3.6.6 dok je za pozivanje verzije 2.7 potrebno kucati sledeće:
-\begin{lstlisting}
- python2 --version
- Python 2.7.13
+ sudo apt install python3.6
+ sudo dnf install python3
+ sudo zypper install python3
 \end{lstlisting}
-\begin{figure}[h!]
-\centering
-\includegraphics[width=1.\linewidth]{python2.png}
-\caption*{\textsl{Slika 3. Pokretanje pythona verzije 2.7}}
-\end{figure}
-  Kako bi otklonili ovaj problem, u direktorijumu \textsl{/home/user/.bashrc}, koristeći jedna od tekst editora, upišemo sledeću komandu:
-\begin{lstlisting}
- alias python=python3
-\end{lstlisting}  
-Ovom komandom prilikom svakog pozivanja pythona iz terminala kao podrazumevana verzija će biti 3.6.6, što će biti jako bitno u daljem radu.
-
+gde je prva komanda za Debian, Fedoru i openSuse redom.
+\subsection{Podešavanje virtuelnog okruženja}
+Pre nego što instaliramo Django pokazaćemo kako instalirati veoma zahvalnu alatku, koja nam omogućava održavanje čistoće paketa na sistemu. Virtuelno okruženje (engl. \textsl{virtual environment}) izoluje projekte jedan od drugog, držeći pakete vezane za svaki projekat zasebno. 
 
 
 
