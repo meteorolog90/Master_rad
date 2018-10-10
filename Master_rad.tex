@@ -10,7 +10,7 @@
 \renewcommand{\contentsname}{Sadržaj}
 \usepackage{indentfirst}
 \usepackage {listings}
-\lstset{language=Python}
+
 \usepackage{hyperref}
 \begin{document}
 \pagenumbering{gobble}
@@ -163,15 +163,37 @@ Ukoliko je Python verzije 3.6 instaliran, pojavi se sledeće
 \caption*{\textsl{Slika 2. Python verzije 3.6 pokrenut iz terminala}}
 \end{figure}
 Ukoliko nemate instaliran Python verzije 3.6, možete ga instalirati :
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
  sudo apt install python3.6
  sudo dnf install python3
  sudo zypper install python3
 \end{lstlisting}
 gde je prva komanda za Debian, Fedoru i openSuse redom.
 \subsection{Podešavanje virtuelnog okruženja}
-Pre nego što instaliramo Django pokazaćemo kako instalirati veoma zahvalnu alatku, koja nam omogućava održavanje čistoće paketa na sistemu. Virtuelno okruženje (engl. \textsl{virtual environment}) izoluje projekte jedan od drugog, držeći pakete vezane za svaki projekat zasebno. 
+Pre nego što instaliramo Django pokazaćemo kako instalirati veoma zahvalnu alatku, koja nam omogućava održavanje čistoće paketa na sistemu. Virtuelno okruženje (engl. \textsl{virtual environment}) izoluje projekte jedan od drugog, držeći pakete vezane za svaki projekat zasebno. Kako bi kreirali virtuelno okruženje zvano \textsl{env}, u direktorijum u kome smo započeli projekat, u terminal kucamo :
+\begin{lstlisting}
+ python3 -m virtualenv env
+\end{lstlisting} [language=bash]
+Kada ovo odradimo, u dokumentu se pojavi dokument \textsl{env} u koji će se instalirati svi paketi koje u buduće budemo koristili. Kada ovo sve odradimo, ostalo nam je još da ovo virtuelno okruženje aktiviramo. Aktiviranje virtuelno okruženja radimo na sledeći način :
+\begin{lstlisting}
+ source env/bin/activate
+\end{lstlisting} 
+nako čega se u terminalu pojavljuje nastavak \textsl{(env)}. Ovaj nastavak nam potvrđuje da je virtuelno okruženje aktvirano. Kako bi zatvorili virtuelno okruženje, u terminal kucamo komandu \textsl{deactivate}. 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1.\linewidth]{env.png}
+\caption*{\textsl{Slika 3. Postupak aktiviranje virtuelnog okruženja}}
+\end{figure}
 
+\subsection{Instaliranje Djanga}
+Kada smo podesili virtuelno okruženje možemo instalirati Django.  Instaliranje radimo pomoću  \textsl{Python Package Manager - pip}. Prvo uradimo nadogradnju pip paketa, kako bi imali poslednju verziju. To radimo na sledeći način :
+\begin{lstlisting}
+ (env)$ python3 -m pip install --upgrade pip
+\end{lstlisting} 
+Kada smo uradili nadogradnju pip-a, Django instaliramo :
 
-
+\begin{lstlisting}
+ pip install Django
+\end{lstlisting} 
+Kada ovo odradimo možemo uspešno pokrenuti naš prvi Django projekat.
 \end{document}
