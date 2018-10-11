@@ -1,10 +1,11 @@
 \documentclass[12pt]{article}
 \usepackage[utf8x]{inputenc}
-\usepackage{kpfonts}
+\usepackage{tgcursor}
 \usepackage[serbian]{babel}
 \usepackage{geometry}
 \usepackage{subcaption}
 \usepackage [export]{adjustbox}
+\usepackage{tcolorbox}
 \geometry{a4paper} 
 
 \renewcommand{\contentsname}{Sadržaj}
@@ -159,7 +160,7 @@ Ukoliko je Python verzije 3.6 instaliran, pojavi se sledeće
 \end{lstlisting}
 \begin{figure}[h!]
 \centering
-\includegraphics[width=1.\linewidth]{python.png}
+\includegraphics[width=0.8\linewidth]{python.png}
 \caption*{\textsl{Slika 2. Python verzije 3.6 pokrenut iz terminala}}
 \end{figure}
 Ukoliko nemate instaliran Python verzije 3.6, možete ga instalirati :
@@ -173,7 +174,7 @@ gde je prva komanda za Debian, Fedoru i openSuse redom.
 Pre nego što instaliramo Django pokazaćemo kako instalirati veoma zahvalnu alatku, koja nam omogućava održavanje čistoće paketa na sistemu. Virtuelno okruženje (engl. \textsl{virtual environment}) izoluje projekte jedan od drugog, držeći pakete vezane za svaki projekat zasebno. Kako bi kreirali virtuelno okruženje zvano \textsl{env}, u direktorijum u kome smo započeli projekat, u terminal kucamo :
 \begin{lstlisting}
  python3 -m virtualenv env
-\end{lstlisting} [language=bash]
+\end{lstlisting} 
 Kada ovo odradimo, u dokumentu se pojavi dokument \textsl{env} u koji će se instalirati svi paketi koje u buduće budemo koristili. Kada ovo sve odradimo, ostalo nam je još da ovo virtuelno okruženje aktiviramo. Aktiviranje virtuelno okruženja radimo na sledeći način :
 \begin{lstlisting}
  source env/bin/activate
@@ -181,19 +182,36 @@ Kada ovo odradimo, u dokumentu se pojavi dokument \textsl{env} u koji će se ins
 nako čega se u terminalu pojavljuje nastavak \textsl{(env)}. Ovaj nastavak nam potvrđuje da je virtuelno okruženje aktvirano. Kako bi zatvorili virtuelno okruženje, u terminal kucamo komandu \textsl{deactivate}. 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=1.\linewidth]{env.png}
+\includegraphics[width=0.8\linewidth]{env.png}
 \caption*{\textsl{Slika 3. Postupak aktiviranje virtuelnog okruženja}}
 \end{figure}
 
-\subsection{Instaliranje Djanga}
-Kada smo podesili virtuelno okruženje možemo instalirati Django.  Instaliranje radimo pomoću  \textsl{Python Package Manager - pip}. Prvo uradimo nadogradnju pip paketa, kako bi imali poslednju verziju. To radimo na sledeći način :
+\subsection{Pokretanje Django projekta}
+Kada smo podesili virtuelno okruženje možemo instalirati Django.  Instaliranje radimo pomoću  \textsl{pip} menadžera. Prvo uradimo nadogradnju pip paketa, kako bi imali poslednju verziju. To radimo na sledeći način :
 \begin{lstlisting}
- (env)$ python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
 \end{lstlisting} 
 Kada smo uradili nadogradnju pip-a, Django instaliramo :
-
 \begin{lstlisting}
- pip install Django
+pip install django
+\end{lstlisting}
+Kada ovo odradimo možemo uspešno pokrenuti naš prvi Django projekat. Izrada projekta podrazumeva pokretanje Django skripte koja će izgraditi kostur potrebnih dadoteka. Kucamo sledeću komandu :
+\begin{lstlisting}
+django-admin startproject mysite .
 \end{lstlisting} 
-Kada ovo odradimo možemo uspešno pokrenuti naš prvi Django projekat.
+i u stvorenom direktorijum dobijamo strukturu kao sa slike 4.  U kreiranoj dadoteci \textsl{manage.py} skripta predstavlja upravitelja-menadžera projekta pomoću kojeg se pokreće web server. Skripta        \textsl{settings.py} služi za konfigurisanje našeg sajta. \textsl{urls.py} sadrži šablone(preglede) koje koristimo.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.4\linewidth]{kostur.png}
+\caption*{\textsl{Slika 4. Izgled kostura-struktura django projekta}}
+\end{figure}
+Kako bi pokrenuli web server u terminal kucamo : 
+\begin{lstlisting}{centering}
+python manage.py runserver
+\end{lstlisting}nako čega u internet pretraživač upišemo ovu adresu $http://127.0.0.1:8000/$.  Ako ste sve uradili kako treba u internet pretraživaču bi trebalo da se pojavi čestitka o uspešnom pokretanju web sajta.
+
+
+
+
+
 \end{document}

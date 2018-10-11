@@ -7,9 +7,9 @@
 \contentsline {subsubsection}{\numberline {1.1.4}Pandas}{4}{subsubsection.1.1.4}
 \contentsline {subsubsection}{\numberline {1.1.5}Matplotlib}{5}{subsubsection.1.1.5}
 \contentsline {subsubsection}{\numberline {1.1.6}MetPy}{5}{subsubsection.1.1.6}
-\contentsline {subsection}{\numberline {1.2}Django}{6}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.2}Django}{5}{subsection.1.2}
 \contentsline {subsubsection}{\numberline {1.2.1}Django arhitektura}{6}{subsubsection.1.2.1}
 \contentsline {section}{\numberline {2}Postupak za instaliranje}{8}{section.2}
 \contentsline {subsection}{\numberline {2.1}Instaliranje Python3 verzije }{8}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Pode\IeC {\v s}avanje virtuelnog okru\IeC {\v z}enja}{9}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Instaliranje Djanga}{10}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Pokretanje Django projekta}{9}{subsection.2.3}
