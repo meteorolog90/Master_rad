@@ -12,3 +12,8 @@
 \BOOKMARK [2][-]{subsection.2.1}{Instaliranje Python3 verzije }{section.2}% 12
 \BOOKMARK [2][-]{subsection.2.2}{Pode\235avanje virtuelnog okru\236enja}{section.2}% 13
 \BOOKMARK [2][-]{subsection.2.3}{Pokretanje Django projekta}{section.2}% 14
+\BOOKMARK [1][-]{section.3}{Interpolacija}{}% 15
+\BOOKMARK [2][-]{subsection.3.1}{Linearna interpolacija}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.2}{Interpolacija najbli\236eg suseda}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.3}{Barnesinterpolacija}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.4}{Kresman interpolacija}{section.3}% 19

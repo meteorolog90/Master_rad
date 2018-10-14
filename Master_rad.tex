@@ -187,7 +187,7 @@ nako čega se u terminalu pojavljuje nastavak \textsl{(env)}. Ovaj nastavak nam 
 \end{figure}
 
 \subsection{Pokretanje Django projekta}
-Kada smo podesili virtuelno okruženje možemo instalirati Django.  Instaliranje radimo pomoću  \textsl{pip} menadžera. Prvo uradimo nadogradnju pip paketa, kako bi imali poslednju verziju. To radimo na sledeći način :
+Kada smo podesili virtuelno okruženje možemo instalirati Django.  Instaliranje radimo pomoću  \textsl{pip} menadžera-. Prvo uradimo nadogradnju pip paketa, kako bi imali poslednju verziju. To radimo na sledeći način :
 \begin{lstlisting}
 python3 -m pip install --upgrade pip
 \end{lstlisting} 
@@ -210,8 +210,20 @@ Kako bi pokrenuli web server u terminal kucamo :
 python manage.py runserver
 \end{lstlisting}nako čega u internet pretraživač upišemo ovu adresu $http://127.0.0.1:8000/$.  Ako ste sve uradili kako treba u internet pretraživaču bi trebalo da se pojavi čestitka o uspešnom pokretanju web sajta.
 
+\newpage
+\section{Interpolacija}
 
+Podaci sa meteoroloških stanica su veoma značajni za prognozu vremena. U prognozi vremena ovi podaci se koriste kao početni uslovi za jednačine dok se kod analize koriste za vizuelni prezentaciju polja promenljivih. Cilj je što vernije predstaviti stanje varijabli na određenom nivou i mestu. Ako bi postojala merenja u svim tačkama prostora i uz to dovoljno tačna, problem tačnosti ne bi postojao. Međutim, broj raspoloživih stanica koje šalju podatke i dalje nije dovoljan jer na nekim mestima, poput okeana ili neprisupačnim predela, ne postoji mogućnost postavljana mernih uređaja. Jedan način rešenje ovog problema su satelitska merenja a drugi pristupačniji je uz pomoć interpolacije.
 
-
-
+Interpolacija je moćna metoda za analizu podataka kod kojih su merenja rasuta. Problem interpolacije je njena implementacija. Za nekoliko poznatih priemera, koristeći različite metode interpolacije dobićemo različite rezultate. Zbog toga, aplikacija će omogućivati prikaz četiri metode iterpolacije :
+\begin{itemize}
+\item linearna interpolacija
+\item interpolacija najbližeg suseda
+\item Barnes interpolacija
+\item Kresman interpolacija
+\end{itemize}
+\subsection{Linearna interpolacija}
+\subsection{Interpolacija najbližeg suseda}
+\subsection{Barnesinterpolacija}
+\subsection{Kresman interpolacija}
 \end{document}
