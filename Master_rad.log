@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.10.8)  15 OCT 2018 23:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.10.8)  15 OCT 2018 23:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -796,9 +796,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
  (./Master_rad.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 267.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 267.
-Package rerunfilecheck Info: File `Master_rad.out' has not changed.
-(rerunfilecheck)             Checksum: 882DB4F91546F8FC4F85F1923B151882;1238.
 
+
+Package rerunfilecheck Warning: File `Master_rad.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Master_rad.out':
+(rerunfilecheck)             Before: 882DB4F91546F8FC4F85F1923B151882;1238
+(rerunfilecheck)             After:  5C538A13D032A62B7B7CA1FD21EAB99A;1235.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -823,7 +829,7 @@ fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb>
-Output written on Master_rad.pdf (14 pages, 216710 bytes).
+Output written on Master_rad.pdf (14 pages, 217056 bytes).
 PDF statistics:
  259 PDF objects out of 1000 (max. 8388607)
  224 compressed objects within 3 object streams

@@ -224,8 +224,8 @@ Interpolacija predstavlja metod procene vrednosti varijable na messtima gde oni 
 \end{itemize}
 Metode interpolacije možemo podeliti u dve kategorije u zavisnosti koje tačke su uzete za definisanje interpolacije u određenoj tački. Ove dve kategorije su globalna i lokalna interpolacija.
 \subsection{Linearna interpolacija}
-\subsection{Interpolacija najbližeg suseda}
-
+\subsection{Natural neighbor interpolacija}
+Postoje razne implementacije natural neighbor interpolacija. Ovde će biti obrađena lokalna metoda koja se bazira na Voronojevom dijagramu i Delaunayovoj triangulaciji. Pokazala se kao vremenski malo zahtevna metoda, jer se bazira na ideji ponovnog korišćenja rezultata tokom proračuna u što većom obimu.
 \subsection{Barnes i Cressman interpolacija}
 Barnes i Cressman spadaju u grupu sukcesivno korekcionih metoda, kod kojih se polje varijabli modifikuje koristeći osmotrene podatke iterativnim postupkom. Metod se zasniva na prolazu kroz svaku tačku mreže, ažuriranj varijabli za svaku od njih na osnovu osmotrenih podataka koje obuhvataju tu tačku mreže. Nakon prvog prolaza kroz zadato područje, radi se drugi prolaz, modifikujući polje svake tačke mrže u odnosu na okolne osmotrene tačke. Ove interacije se rade sve dok razlike između dve iteracije ne budu manje od zadatog praga.  
 Polje mreže u tački $i$ se ažurira na sledeći način:
