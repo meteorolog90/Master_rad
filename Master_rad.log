@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.10.8)  14 OCT 2018 22:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.10.8)  15 OCT 2018 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -595,7 +595,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip43
 )
-(./Master_rad.aux)
+(./Master_rad.aux
+
+LaTeX Warning: Label `key' multiply defined.
+
+)
 \openout1 = `Master_rad.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -704,13 +708,13 @@ LaTeX Info: Redefining \nameref on input line 16.
 \@outlinefile=\write6
 \openout6 = `Master_rad.out'.
 
- <PMF.jpg, id=83, 200.75pt x 196.735pt>
+ <PMF.jpg, id=79, 200.75pt x 196.735pt>
 File: PMF.jpg Graphic file (type jpg)
 
 <use PMF.jpg>
 Package pdftex.def Info: PMF.jpg used on input line 21.
 (pdftex.def)             Requested size: 125.47737pt x 122.97105pt.
- <uns.jpg, id=84, 289.08pt x 287.0725pt>
+ <uns.jpg, id=80, 289.08pt x 287.0725pt>
 File: uns.jpg Graphic file (type jpg)
  <use uns.jpg>
 Package pdftex.def Info: uns.jpg used on input line 22.
@@ -759,7 +763,7 @@ Overfull \hbox (2.94057pt too wide) in paragraph at lines 106--107
  vi-zu-i-li-za-ciju i prora^^Tcuna
  []
 
-[5] <django.jpeg, id=148, 744.7825pt x 357.335pt>
+[5] <django.jpeg, id=143, 744.7825pt x 357.335pt>
 File: django.jpeg Graphic file (type jpg)
  <use django.jpeg>
 Package pdftex.def Info: django.jpeg used on input line 139.
@@ -768,55 +772,61 @@ Package pdftex.def Info: django.jpeg used on input line 139.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6] [7 <./django.jpeg>] <python.png, id=159, 528.47438pt x 271.0125pt>
+[6] [7 <./django.jpeg>] <python.png, id=154, 528.47438pt x 271.0125pt>
 File: python.png Graphic file (type png)
 
 <use python.png>
 Package pdftex.def Info: python.png used on input line 163.
 (pdftex.def)             Requested size: 334.60422pt x 171.59064pt.
  [8 <./python.png>]
-<env.png, id=175, 447.17062pt x 275.52937pt>
+<env.png, id=170, 447.17062pt x 275.52937pt>
 File: env.png Graphic file (type png)
  <use env.png>
 Package pdftex.def Info: env.png used on input line 185.
 (pdftex.def)             Requested size: 334.60422pt x 206.17563pt.
- [9 <./env.png (PNG copy)>] <kostur.png, id=185, 148.30406pt x 103.13531pt>
+ [9 <./env.png (PNG copy)>] <kostur.png, id=180, 148.30406pt x 103.13531pt>
 File: kostur.png Graphic file (type png)
  <use kostur.png>
 Package pdftex.def Info: kostur.png used on input line 205.
 (pdftex.def)             Requested size: 167.2989pt x 116.34952pt.
 
-[10 <./kostur.png (PNG copy)>] [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
+[10 <./kostur.png (PNG copy)>] [11] [12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
  (./Master_rad.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 229.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 229.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 267.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 267.
 Package rerunfilecheck Info: File `Master_rad.out' has not changed.
-(rerunfilecheck)             Checksum: C5E2B5614B20BB3E11C872EB27FB3822;1297.
+(rerunfilecheck)             Checksum: 882DB4F91546F8FC4F85F1923B151882;1238.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 19883 strings out of 493061
- 353117 string characters out of 6137744
- 447956 words of memory out of 5000000
+ 19887 strings out of 493061
+ 353147 string characters out of 6137744
+ 448053 words of memory out of 5000000
  23013 multiletter control sequences out of 15000+600000
  8255 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,8n,77p,918b,1232s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Master_rad.pdf (13 pages, 186817 bytes).
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb>
+Output written on Master_rad.pdf (14 pages, 216710 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 212 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
- 195 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 259 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 187 words of extra memory for PDF output out of 10000 (max. 10000000)
 

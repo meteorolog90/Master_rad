@@ -16,5 +16,4 @@
 \contentsline {section}{\numberline {3}Interpolacija}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Linearna interpolacija}{11}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Interpolacija najbli\IeC {\v z}eg suseda}{11}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Barnesinterpolacija}{11}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Kresman interpolacija}{11}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.3}Barnes i Cressman interpolacija}{11}{subsection.3.3}
