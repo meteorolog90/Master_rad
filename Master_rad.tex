@@ -225,7 +225,24 @@ Interpolacija predstavlja metod procene vrednosti varijable na messtima gde oni 
 Metode interpolacije možemo podeliti u dve kategorije u zavisnosti koje tačke su uzete za definisanje interpolacije u određenoj tački. Ove dve kategorije su globalna i lokalna interpolacija.
 \subsection{Linearna interpolacija}
 \subsection{Natural neighbor interpolacija}
-Postoje razne implementacije natural neighbor interpolacija. Ovde će biti obrađena lokalna metoda koja se bazira na Voronojevom dijagramu i Delaunayovoj triangulaciji. Pokazala se kao vremenski malo zahtevna metoda, jer se bazira na ideji ponovnog korišćenja rezultata tokom proračuna u što većom obimu.
+Postoje razne implementacije natural neighbor interpolacija. Ovde će biti obrađena lokalna metoda koja se bazira na Voronojevom dijagramu i Deloneovoj trijangulaciji. Pokazala se kao vremenski malo zahtevna metoda, jer se bazira na ideji ponovnog korišćenja rezultata tokom proračuna u što većom obimu. Prvo ćemo definisati teoriju Voronoj dijagrama i Delonove trijangulacije.
+Za dati skup tačaka u ravni, koje ćemo u daljem tekstu nazvati centrima, konstrukcija Voronoj dijagrama podrazumeva podelu ravni na ćelije, tako da svaka ćelija sadrži jedan centar. Deloneov graf nad datim skupom tačaka u ravni je dualan graf Voronoj dijagramu. Drugim rečima, čvorovi ovog grafa su centri, a grane povezuju čvorove, koji odgovaraju centrima susednih Voronoj ćelija. Na slici 5 su prikazani
+Voronoj dijagram (podebljane linije) i Deloneova triangulacija (obične linije) skupa od devet centara.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{vor.png}
+	\caption*{\textsl{Slika 5. Voronoj dijagram i Deloneova tiangulacija}}
+\end{figure} 
+Ako dve Voronoj ćelije dele zajedničke ivice onda za njih kažemo da su prirodni susedi(natural neighbor). Kako bi se definisali susedi za određene tačke interpolacije $x$, prvo formiramo Voronoj ćeliju u kojoj se ova tačka nalazi. Formiranjem ćelije definišemo zapreminu $V(x)$, koja će imati nove susede. Na slici 6 možemo videti da su za tačku $x$ prirodni susedi $x_{1}$, $x_{2}$, $x_{3}$, $x_{4}$, $x_{5}$, odnosno da Voronoj ćelija $V(x)$ deli ivice sa $V(x_1)$, $V(x_2)$, $V(x_3)$, $V(x_4)$, $V(x_5)$.    
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth]{slika6.png}
+\caption*{\textsl{Slika 6. Najbliži susedi za tačku x}}
+\end{figure}
+Vrednost interpolacije u tački $x$ dobijamo tako što usrednjimo vrednosti ovih definisanih okolnih, susednih tačaka. 
+
+
+ 
 \subsection{Barnes i Cressman interpolacija}
 Barnes i Cressman spadaju u grupu sukcesivno korekcionih metoda, kod kojih se polje varijabli modifikuje koristeći osmotrene podatke iterativnim postupkom. Metod se zasniva na prolazu kroz svaku tačku mreže, ažuriranj varijabli za svaku od njih na osnovu osmotrenih podataka koje obuhvataju tu tačku mreže. Nakon prvog prolaza kroz zadato područje, radi se drugi prolaz, modifikujući polje svake tačke mrže u odnosu na okolne osmotrene tačke. Ove interacije se rade sve dok razlike između dve iteracije ne budu manje od zadatog praga.  
 Polje mreže u tački $i$ se ažurira na sledeći način:

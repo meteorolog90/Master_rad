@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.10.8)  15 OCT 2018 23:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.10.8)  16 OCT 2018 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -790,21 +790,27 @@ File: kostur.png Graphic file (type png)
 Package pdftex.def Info: kostur.png used on input line 205.
 (pdftex.def)             Requested size: 167.2989pt x 116.34952pt.
 
-[10 <./kostur.png (PNG copy)>] [11] [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
+[10 <./kostur.png (PNG copy)>] <vor.png, id=195, 661.47125pt x 491.8375pt>
+File: vor.png Graphic file (type png)
+
+<use vor.png>
+Package pdftex.def Info: vor.png used on input line 233.
+(pdftex.def)             Requested size: 209.12683pt x 155.4925pt.
+ <slika6.png, id=196, 239.39438pt x 188.20313pt>
+File: slika6.png Graphic file (type png)
+ <use slika6.png>
+Package pdftex.def Info: slika6.png used on input line 239.
+(pdftex.def)             Requested size: 250.95476pt x 197.29172pt.
+
+[11] [12 <./vor.png> <./slika6.png (PNG copy)>] [13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 284.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 284.
  (./Master_rad.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 267.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 267.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 284.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 284.
+Package rerunfilecheck Info: File `Master_rad.out' has not changed.
+(rerunfilecheck)             Checksum: 5C538A13D032A62B7B7CA1FD21EAB99A;1235.
 
-
-Package rerunfilecheck Warning: File `Master_rad.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Master_rad.out':
-(rerunfilecheck)             Before: 882DB4F91546F8FC4F85F1923B151882;1238
-(rerunfilecheck)             After:  5C538A13D032A62B7B7CA1FD21EAB99A;1235.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -813,10 +819,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19887 strings out of 493061
- 353147 string characters out of 6137744
- 448053 words of memory out of 5000000
- 23013 multiletter control sequences out of 15000+600000
+ 19900 strings out of 493061
+ 353310 string characters out of 6137744
+ 449053 words of memory out of 5000000
+ 23021 multiletter control sequences out of 15000+600000
  8255 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,8n,77p,918b,1232s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -829,10 +835,10 @@ fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb>
-Output written on Master_rad.pdf (14 pages, 217056 bytes).
+Output written on Master_rad.pdf (15 pages, 241842 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
- 187 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 270 PDF objects out of 1000 (max. 8388607)
+ 231 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 197 words of extra memory for PDF output out of 10000 (max. 10000000)
 
