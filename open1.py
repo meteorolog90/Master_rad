@@ -1,7 +1,7 @@
 import pandas as pd 
 
-s = pd.read_csv('/home/meteorolog/Desktop/Master_rad/CARPATGRID_TA_M.ser',sep ='\s+')
-d = pd.read_csv('/home/meteorolog/Desktop/Master_rad/PredtandfilaGrid.dat', sep ='\s+')
+s = pd.read_csv('/home/meteo/Documents/Master_rad/CARPATGRID_TA_M.ser',sep ='\s+')
+d = pd.read_csv('/home/meteo/Documents/Master_rad/PredtandfilaGrid.dat', sep ='\s+')
 
 
 y = int(input('Unesite godinu:'))

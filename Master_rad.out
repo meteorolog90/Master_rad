@@ -1,0 +1,23 @@
+\BOOKMARK [1][-]{section.1}{Kori\235ceni alati}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Python}{section.1}% 2
+\BOOKMARK [3][-]{subsubsection.1.1.1}{Kori\235cenje biblioteka}{subsection.1.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.1.2}{Scipy}{subsection.1.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.1.3}{Numpy}{subsection.1.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.1.4}{Pandas}{subsection.1.1}% 6
+\BOOKMARK [3][-]{subsubsection.1.1.5}{Matplotlib}{subsection.1.1}% 7
+\BOOKMARK [3][-]{subsubsection.1.1.6}{Metpy}{subsection.1.1}% 8
+\BOOKMARK [2][-]{subsection.1.2}{Django}{section.1}% 9
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Django arhitektura}{subsection.1.2}% 10
+\BOOKMARK [1][-]{section.2}{Postupak za instaliranje}{}% 11
+\BOOKMARK [2][-]{subsection.2.1}{Instaliranje Python3 verzije }{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.2}{Pode\235avanje virtuelnog okru\236enja}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.3}{Pokretanje Django projekta}{section.2}% 14
+\BOOKMARK [1][-]{section.3}{Interpolacija}{}% 15
+\BOOKMARK [2][-]{subsection.3.1}{Kori\235cene metode interpolacije}{section.3}% 16
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Linearna interpolacija}{subsection.3.1}% 17
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Natural neighbor interpolacija}{subsection.3.1}% 18
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Barnes i Cressman interpolacija}{subsection.3.1}% 19
+\BOOKMARK [1][-]{section.4}{Carpatclim aplikacija}{}% 20
+\BOOKMARK [2][-]{subsection.4.1}{Godi\235nje, mesecne, dnevne srednje vrednosti temperature}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.2}{Vrednosti tacke}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.3}{Trenutno vreme}{section.4}% 23
