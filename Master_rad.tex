@@ -7,12 +7,43 @@
 \usepackage [export]{adjust box}
 \usepackage{tcolorbox}
 \geometry{a4paper} 
-
 \renewcommand{\contentsname}{Sadržaj}
 \usepackage{indentfirst}
 \usepackage {listings}
-
 \usepackage{hyperref}
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	%numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+
+
+
+
 \begin{document}
 \pagenumbering{gobble}
 \clearpage
@@ -187,7 +218,7 @@ nako čega se u terminalu pojavljuje nastavak \textsl{(env)}. Ovaj nastavak nam 
 \end{figure}
 
 \subsection{Pokretanje Django projekta}
-Kada smo podesili virtuelno okruženje možemo instalirati Django.  Instaliranje radimo pomoću  \textsl{pip} menadžera-. Prvo uradimo nadogradnju pip paketa, kako bi imali poslednju verziju. To radimo na sledeći način :
+Kada smo podesili virtuelno okruženje možemo instalirati Django.  Instaliranje radimo pomoću \textsl{pip} menadžera. Prvo uradimo nadogradnju pip paketa, kako bi imali poslednju verziju. To radimo na sledeći način :
 \begin{lstlisting}
 python3 -m pip install --upgrade pip
 \end{lstlisting} 
@@ -199,29 +230,85 @@ Kada ovo odradimo možemo uspešno pokrenuti naš prvi Django projekat. Izrada p
 \begin{lstlisting}
 django-admin startproject carpatclimsite .
 \end{lstlisting} 
-i u stvorenom direktorijum dobijamo strukturu kao sa slike 4. U strukturi django projekta \textsl{manage.py} skripta predstavlja upravitelja projekta pomoću kojeg se pokreće web server. Skripta        \textsl{settings.py} služi za konfigurisanje našeg sajta. \textsl{urls.py} sadrži šablone (preglede) koje koristimo.
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.5\linewidth]{kostur.png}
-\caption*{\textsl{Slika 4. Izgled struktura carpatclimsite projekta}}
-\end{figure}
-Kako bi pokrenuli web server u terminal kucamo : 
+i u stvorenom direktorijum dobijamo strukturu kao sa slike 4. U strukturi django projekta \textsl{manage.py} skripta predstavlja upravitelja projekta pomoću kojeg se pokreće web server. Skripta        \textsl{settings.py} služi za konfigurisanje našeg sajta. \textsl{urls.py} sadrži šablone (preglede) koje koristimo. Kako bi pokrenuli web server u terminal kucamo : 
 \begin{lstlisting}{centering}
 python manage.py runserver
 \end{lstlisting}nako čega u internet pretraživač unesemo adresu $http://127.0.0.1:8000/$.  Ako je sve urađeno kako treba u internet pretraživaču bi trebalo da se pojavi čestitka o uspešnom pokretanju web sajta.
-Nakon uspešnog pokretanja sajta, sledeća stavka je kreiranje aplikacije. Kako bi stvorili aplikaciju u datom projektu, u terminal upisujemo sledeću komandu :
-\begin{lstlisting}{centering}
-python manage.py startapp carpatclimapp
-\end{lstlisting}Nakon ove komande u projektu se pojavi dokument carpatclimapp, sa strukturom podataka ka na slici 5. \textit{Views.py } skripta sadrži funkcije koje komunicira blblablalbl. \textsl{Modle.py} definišemo model
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\textwidth]{app.png}
-	\caption*{\textsl{Slika 5. Struktura carpatclimapp dokumenta}}
+	\includegraphics[width=0.33\linewidth]{Kosturapp.png}
+	\caption*{\textsl{Slika 4. Struktura carpatclimsite projekta}}
 \end{figure}
+Nakon uspešnog pokretanja sajta, sledeća stavka je stvaranje aplikacije. Kako bi stvorili aplikaciju u datom projektu, u terminal upisujemo sledeću komandu :
+\begin{lstlisting}{centering}
+python manage.py startapp carpatclimapp
+\end{lstlisting}
+Nakon ove komande u projektu se pojavi dokument carpatclimapp sa Python skriptama. U Python skripti \textit{views.py} (pogled) skripta sadrži funkcije zadužene za funkcionisanje web aplikacije. Pomoću pogleda definišemo kontak sa bazom podataka, vršimo razmenu podataka. Svaki pogled se mora definisati u \textsl{urls.py} skripti koju stvorimo u ovom dokumentu. Sledeća bitna skripta je forms.py, pomoću koje vršimo definisanje godine, meseca, dana za pruzimanje podataka iz baze podataka. Ovu skriptu kao i \textsl{urls.py} moramo stvoriti u carpatclimapp dokumentu. U \textsl{forms.py} skripti definišemo klase za :
+\begin{itemize}
+	\item Godišenje (CronFormYearly)
+	\item Mesečne (CronFormMonthly)
+	\item Dnevne (CronFormDaily)
+\end{itemize}
+vrednosti srednjih temperatura. U zavisnosti od izbora željenog vremenskog intervala, pojavi se odgovarajuća forma.
+\subsubsection{POST i GET zahtev}
+Kako bi što bolje razumeli interakciju između forme i pogleda, njihovo funkcionalnost ćemo objasniti uz pomoć POST i GET zahteva. Koristeći formu stvaramo podatke koje uz pomoć POST metoda šaljemo ka serveru u vidu zahteva (\textsl{Request}), nakon čega server vraća zahtevane podatke u vidu odgovora (\textsl{Response}). Forma stvara zahtev koje podatke želimo primiti kada se stisne dugme "{Submitt}". GET metoda se koristi za dostavljanje podataka u niz i stvaranje URL adrese. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{server.png}
+	\caption*{\textsl{Slika 5. Razmena podataka između korisnika i servera}}
+\end{figure}
+Uloga pogleda je ostvarivanje kontakta sa serverom i stvaranje prikaza podataka kada oni stignu sa servera. Prikaz se ostvaruje uz pomoć  šablona  (templates), koje se moraju stvoriti u dokumentu date aplikacije. Za svaku aplikaciju unutar Django projekta se stvaraju zasebni šabloni čija uloga je vizuelni u sklopu internet pretraživača. U te svrhe pored HTML i CSS korišćen je i Bootstrap.
+
+Pogledaćemo sada kako izgleda pogled za godišnje vrednosti temperature.
+\begin{lstlisting}[language=Python]
+def yearly(request):
+	if request.method == "POST":
+		form = CronFormYearly(request.POST)
+		if form.is_valid():
+			data = form.cleaned_data
+			year = data.get('year')
+			date_path = year
+			return redirect('/%s/' % (date_path))
+	else:
+		form = CronFormYearly()
+		active_yearly = True
+	return render(request, 'carpatclimapp/home.html', {'form': form, 'active_yearly': active_yearly})
+\end{lstlisting} 
+Ovaj pogled, koji definiše upit za godišnje podatke, nam kaže sledeće, ako je aktiviran POST metod, uzmi formu u obliku \textsl{CronFormYearly}, ako je forma važeća uzmi podatke za definisanu godinu. Ako POST zahtev nije aktiviran, prikaži formu čija struktura je definisana u $home.html$ datoteci, koja je deo bloka \textsl{base.html}.
+
+\subsubsection{Grafički prikaz polja temperature}
+Kada smo poslali zahtev za podatake, i kada su ovi podaci uspešno prosleđeni, sa njima želim nešto dobiti. U našem slučaju mi želimo dobiti grafički prikaz polja srednje temperature u sklopu Karpata za zadatu godinu. Kako bi dobili grafički prikaz moramo stvoriti funkciju koja će ovaj zadatak uraditi za nas. U te svrhe je zadužena funkcija \verb|carpatclim_y_figure|.
+\begin{lstlisting}[language=Python]
+def carpatclim_y_figure(request, year):
+
+map = create_map(year, month=None, day=None)
+buffer = BytesIO()
+canvas = FigureCanvas(map)
+canvas.print_png(buffer)
+
+response = HttpResponse(buffer.getvalue(), content_type='image/png')
+response['Content-Length'] = str(len(response.content))
+return response
+\end{lstlisting}
+Uzimajući vrednosti za godinu, koristeći funkciju \verb|create_map| dobija se grafički prikaz polja temperature.
+
+\subsubsection{Definisanje URL-a}
+Kako bi pokrenuli funkciju \verb|yeraly| i \verb|carpatclim_y_figure|, koje se nalaze u sklopu pogleda, moramo definisati njihov url. To se radi tako što unutar carpatoclimapp stvorimo skriptu \textsl{urls.py}, unutra koje definišemo urlpatterns za funkcije:
+\begin{lstlisting}[language=Python]
+path('yearly/', views.yearly, name='yearly'),
+path('<int:year>/figure.png', views.carpatclim_y_figure, name='carpatclim_y_figure')
+\end{lstlisting}
+Ovim pristup postižemo da za svaku funkciju postoji zadata adresa. Recimo, korišćenjem \verb|yearly/| u adresi prikazuje se forma u obliku kao na slici 6 :
 
 
-
-  
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.25\linewidth]{Yearly.png}
+	\caption*{\textsl{Slika 6. Izgled forme za godinšnje vrednosti}}
+\end{figure}
+U ovom primeru je prikazan url za godišnje vrednosti. Za mesečne i dnevne vrednosti adrese se razlikuju po tome što se osim godine, u adresi pojavljuju vrednosti za mesec odnosno dan.
+%definisemo url.py, templates
+%susection o kreiranju baze podataka
 
 \newpage
 \section{Interpolacija}

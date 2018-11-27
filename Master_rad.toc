@@ -13,12 +13,15 @@
 \contentsline {subsection}{\numberline {2.1}Instaliranje Python3 verzije }{8}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Pode\IeC {\v s}avanje virtuelnog okru\IeC {\v z}enja}{8}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Pokretanje Django projekta}{9}{subsection.2.3}
-\contentsline {section}{\numberline {3}Interpolacija}{11}{section.3}
-\contentsline {subsection}{\numberline {3.1}Kori\IeC {\v s}\IeC {\'c}ene metode interpolacije}{11}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Linearna interpolacija}{12}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Natural neighbor interpolacija}{12}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}Barnes i Cressman interpolacija}{12}{subsubsection.3.1.3}
-\contentsline {section}{\numberline {4}Carpatclim aplikacija}{15}{section.4}
-\contentsline {subsection}{\numberline {4.1}Godi\IeC {\v s}nje, mese\IeC {\v c}ne, dnevne srednje vrednosti temperature}{16}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Vrednosti ta\IeC {\v c}ke}{17}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Trenutno vreme}{18}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {2.3.1}POST i GET zahtev}{11}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Grafi\IeC {\v c}ki prikaz polja temperature}{12}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Definisanje URL-a}{12}{subsubsection.2.3.3}
+\contentsline {section}{\numberline {3}Interpolacija}{14}{section.3}
+\contentsline {subsection}{\numberline {3.1}Kori\IeC {\v s}\IeC {\'c}ene metode interpolacije}{14}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Linearna interpolacija}{14}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Natural neighbor interpolacija}{15}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Barnes i Cressman interpolacija}{15}{subsubsection.3.1.3}
+\contentsline {section}{\numberline {4}Carpatclim aplikacija}{17}{section.4}
+\contentsline {subsection}{\numberline {4.1}Godi\IeC {\v s}nje, mese\IeC {\v c}ne, dnevne srednje vrednosti temperature}{18}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Vrednosti ta\IeC {\v c}ke}{19}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Trenutno vreme}{20}{subsection.4.3}
