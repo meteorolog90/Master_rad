@@ -7,6 +7,7 @@
 \usepackage [export]{adjust box}
 \usepackage{tcolorbox}
 \geometry{a4paper} 
+<<<<<<< HEAD
 \renewcommand{\contentsname}{Sadržaj}
 \usepackage{indentfirst}
 \usepackage {listings}
@@ -44,6 +45,14 @@
 
 
 
+=======
+
+\renewcommand{\contentsname}{Sadržaj}
+\usepackage{indentfirst}
+\usepackage {listings}
+
+\usepackage{hyperref}
+>>>>>>> origin
 \begin{document}
 \pagenumbering{gobble}
 \clearpage
@@ -218,7 +227,11 @@ nako čega se u terminalu pojavljuje nastavak \textsl{(env)}. Ovaj nastavak nam 
 \end{figure}
 
 \subsection{Pokretanje Django projekta}
+<<<<<<< HEAD
 Kada smo podesili virtuelno okruženje možemo instalirati Django.  Instaliranje radimo pomoću \textsl{pip} menadžera. Prvo uradimo nadogradnju pip paketa, kako bi imali poslednju verziju. To radimo na sledeći način :
+=======
+Kada smo podesili virtuelno okruženje možemo instalirati Django.  Instaliranje radimo pomoću  \textsl{pip} menadžera-. Prvo uradimo nadogradnju pip paketa, kako bi imali poslednju verziju. To radimo na sledeći način :
+>>>>>>> origin
 \begin{lstlisting}
 python3 -m pip install --upgrade pip
 \end{lstlisting} 
@@ -230,6 +243,7 @@ Kada ovo odradimo možemo uspešno pokrenuti naš prvi Django projekat. Izrada p
 \begin{lstlisting}
 django-admin startproject carpatclimsite .
 \end{lstlisting} 
+<<<<<<< HEAD
 i u stvorenom direktorijum dobijamo strukturu kao sa slike 4. U strukturi django projekta \textsl{manage.py} skripta predstavlja upravitelja projekta pomoću kojeg se pokreće web server. Skripta        \textsl{settings.py} služi za konfigurisanje našeg sajta. \textsl{urls.py} sadrži šablone (preglede) koje koristimo. Kako bi pokrenuli web server u terminal kucamo : 
 \begin{lstlisting}{centering}
 python manage.py runserver
@@ -309,6 +323,31 @@ Ovim pristup postižemo da za svaku funkciju postoji zadata adresa. Recimo, kori
 U ovom primeru je prikazan url za godišnje vrednosti. Za mesečne i dnevne vrednosti adrese se razlikuju po tome što se osim godine, u adresi pojavljuju vrednosti za mesec odnosno dan.
 %definisemo url.py, templates
 %susection o kreiranju baze podataka
+=======
+i u stvorenom direktorijum dobijamo strukturu kao sa slike 4. U strukturi django projekta \textsl{manage.py} skripta predstavlja upravitelja projekta pomoću kojeg se pokreće web server. Skripta        \textsl{settings.py} služi za konfigurisanje našeg sajta. \textsl{urls.py} sadrži šablone (preglede) koje koristimo.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\linewidth]{kostur.png}
+\caption*{\textsl{Slika 4. Izgled struktura carpatclimsite projekta}}
+\end{figure}
+Kako bi pokrenuli web server u terminal kucamo : 
+\begin{lstlisting}{centering}
+python manage.py runserver
+\end{lstlisting}nako čega u internet pretraživač unesemo adresu $http://127.0.0.1:8000/$.  Ako je sve urađeno kako treba u internet pretraživaču bi trebalo da se pojavi čestitka o uspešnom pokretanju web sajta.
+Nakon uspešnog pokretanja sajta, sledeća stavka je kreiranje aplikacije. Kako bi stvorili aplikaciju u datom projektu, u terminal upisujemo sledeću komandu :
+\begin{lstlisting}{centering}
+python manage.py startapp carpatclimapp
+\end{lstlisting}Nakon ove komande u projektu se pojavi dokument carpatclimapp, sa strukturom podataka ka na slici 5. \textit{Views.py } skripta sadrži funkcije koje komunicira blblablalbl. \textsl{Modle.py} definišemo model
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{app.png}
+	\caption*{\textsl{Slika 5. Struktura carpatclimapp dokumenta}}
+\end{figure}
+
+
+
+  
+>>>>>>> origin
 
 \newpage
 \section{Interpolacija}

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.11.9)  27 NOV 2018 10:50
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.11.9)  24 NOV 2018 07:44
+>>>>>>> origin
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -606,6 +610,7 @@ LaTeX Warning: Label `key' multiply defined.
 )
 \openout1 = `Master_rad.aux'.
 
+<<<<<<< HEAD
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
@@ -620,6 +625,22 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
+=======
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+>>>>>>> origin
  (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -692,7 +713,11 @@ e
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count137
 \AtBeginShipoutBox=\box46
+<<<<<<< HEAD
 Package hyperref Info: Link coloring OFF on input line 47.
+=======
+Package hyperref Info: Link coloring OFF on input line 16.
+>>>>>>> origin
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -702,14 +727,21 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count138
 )
+<<<<<<< HEAD
 LaTeX Info: Redefining \ref on input line 47.
 LaTeX Info: Redefining \pageref on input line 47.
 LaTeX Info: Redefining \nameref on input line 47.
+=======
+LaTeX Info: Redefining \ref on input line 16.
+LaTeX Info: Redefining \pageref on input line 16.
+LaTeX Info: Redefining \nameref on input line 16.
+>>>>>>> origin
 
 (./Master_rad.out) (./Master_rad.out)
 \@outlinefile=\write6
 \openout6 = `Master_rad.out'.
 
+<<<<<<< HEAD
  <PMF.jpg, id=111, 200.75pt x 196.735pt>
 File: PMF.jpg Graphic file (type jpg)
 
@@ -720,6 +752,18 @@ Package pdftex.def Info: PMF.jpg used on input line 52.
 File: uns.jpg Graphic file (type jpg)
  <use uns.jpg>
 Package pdftex.def Info: uns.jpg used on input line 53.
+=======
+ <PMF.jpg, id=99, 200.75pt x 196.735pt>
+File: PMF.jpg Graphic file (type jpg)
+
+<use PMF.jpg>
+Package pdftex.def Info: PMF.jpg used on input line 21.
+(pdftex.def)             Requested size: 125.47737pt x 122.97105pt.
+ <uns.jpg, id=100, 289.08pt x 287.0725pt>
+File: uns.jpg Graphic file (type jpg)
+ <use uns.jpg>
+Package pdftex.def Info: uns.jpg used on input line 22.
+>>>>>>> origin
 (pdftex.def)             Requested size: 125.47737pt x 124.60394pt.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-1.def
@@ -743,6 +787,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
+<<<<<<< HEAD
 l.79 \newpage
               [2]
 
@@ -757,21 +802,46 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [2] [3]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 108.
 
+=======
+l.48 \newpage
+              [2]
+
+LaTeX Font Warning: Font shape `OT1/cmr/b/sl' undefined
+(Font)              using `OT1/cmr/b/n' instead on input line 53.
+
+[1]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 59.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 59.
+ [2] [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 77.
+>>>>>>> origin
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+<<<<<<< HEAD
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
  [4]
 [5] <django.jpeg, id=192, 744.7825pt x 357.335pt>
 File: django.jpeg Graphic file (type jpg)
  <use django.jpeg>
 Package pdftex.def Info: django.jpeg used on input line 172.
+=======
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 77.
+ [4]
+[5] <django.jpeg, id=177, 744.7825pt x 357.335pt>
+File: django.jpeg Graphic file (type jpg)
+ <use django.jpeg>
+Package pdftex.def Info: django.jpeg used on input line 141.
+>>>>>>> origin
 (pdftex.def)             Requested size: 250.95476pt x 120.4018pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<<<<<<< HEAD
 [6] [7 <./django.jpeg>] <python.png, id=202, 528.47438pt x 271.0125pt>
 File: python.png Graphic file (type png)
 
@@ -846,11 +916,68 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: aplikacija.png Graphic file (type png)
  <use aplikacija.png>
 Package pdftex.def Info: aplikacija.png used on input line 388.
+=======
+[6] [7 <./django.jpeg>] <python.png, id=187, 528.47438pt x 271.0125pt>
+File: python.png Graphic file (type png)
+
+<use python.png>
+Package pdftex.def Info: python.png used on input line 165.
+(pdftex.def)             Requested size: 334.60422pt x 171.59064pt.
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) [8 <./python.png>] <env.png, id=201, 447.17062pt x 275.52937pt>
+File: env.png Graphic file (type png)
+
+<use env.png>
+Package pdftex.def Info: env.png used on input line 185.
+(pdftex.def)             Requested size: 334.60422pt x 206.17563pt.
+ [9 <./env.png (PNG copy)>]
+<kostur.png, id=215, 193.72375pt x 153.57375pt>
+File: kostur.png Graphic file (type png)
+ <use kostur.png>
+Package pdftex.def Info: kostur.png used on input line 205.
+(pdftex.def)             Requested size: 209.12683pt x 165.78687pt.
+
+<app.png, id=216, 192.72pt x 152.57pt>
+File: app.png Graphic file (type png)
+ <use app.png>
+Package pdftex.def Info: app.png used on input line 218.
+(pdftex.def)             Requested size: 209.12683pt x 165.55768pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./kostur.png>] [11 <./app.png>]
+<vor.png, id=235, 661.47125pt x 491.8375pt>
+File: vor.png Graphic file (type png)
+ <use vor.png>
+Package pdftex.def Info: vor.png used on input line 251.
+(pdftex.def)             Requested size: 209.12683pt x 155.4925pt.
+
+<slika6.png, id=236, 239.39438pt x 188.20313pt>
+File: slika6.png Graphic file (type png)
+ <use slika6.png>
+Package pdftex.def Info: slika6.png used on input line 257.
+(pdftex.def)             Requested size: 250.95476pt x 197.29172pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12] [13 <./vor.png> <./slika6.png (PNG copy)>] [14]
+<aplikacija.png, id=259, 1116.17pt x 622.325pt>
+File: aplikacija.png Graphic file (type png)
+ <use aplikacija.png>
+Package pdftex.def Info: aplikacija.png used on input line 301.
+>>>>>>> origin
 (pdftex.def)             Requested size: 418.25368pt x 233.20036pt.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
+<<<<<<< HEAD
 (hyperref)                removing `\textasciicaron' on input line 395.
 
 [17 <./aplikacija.png>] <Daily.png, id=321, 151.56625pt x 226.8475pt>
@@ -863,11 +990,26 @@ Package pdftex.def Info: Daily.png used on input line 403.
 File: mapa.png Graphic file (type png)
  <use mapa.png>
 Package pdftex.def Info: mapa.png used on input line 411.
+=======
+(hyperref)                removing `\textasciicaron' on input line 308.
+
+[15 <./aplikacija.png>] <Daily.png, id=265, 151.56625pt x 226.8475pt>
+File: Daily.png Graphic file (type png)
+
+<use Daily.png>
+Package pdftex.def Info: Daily.png used on input line 316.
+(pdftex.def)             Requested size: 83.64944pt x 125.19917pt.
+ <mapa.png, id=266, 1000.73875pt x 867.24pt>
+File: mapa.png Graphic file (type png)
+ <use mapa.png>
+Package pdftex.def Info: mapa.png used on input line 324.
+>>>>>>> origin
 (pdftex.def)             Requested size: 250.95476pt x 217.47112pt.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
+<<<<<<< HEAD
 (hyperref)                removing `\textasciicaron' on input line 415.
 
 <points.png, id=323, 413.545pt x 312.16624pt>
@@ -888,10 +1030,33 @@ Package pdftex.def Info: vreme.png used on input line 437.
 (pdftex.def)             Requested size: 209.12683pt x 318.4878pt.
 
 Overfull \hbox (7.62724pt too wide) in paragraph at lines 434--440
+=======
+(hyperref)                removing `\textasciicaron' on input line 328.
+
+<points.png, id=267, 413.545pt x 312.16624pt>
+File: points.png Graphic file (type png)
+ <use points.png>
+Package pdftex.def Info: points.png used on input line 333.
+(pdftex.def)             Requested size: 292.77629pt x 221.00607pt.
+ [16 <./Daily.png> <./mapa.png>] <data.png, id=274, 942.52126pt x 543.02875pt>
+File: data.png Graphic file (type png)
+ <use data.png>
+Package pdftex.def Info: data.png used on input line 341.
+(pdftex.def)             Requested size: 292.77629pt x 168.67688pt.
+
+<vreme.png, id=275, 328.22626pt x 499.8675pt>
+File: vreme.png Graphic file (type png)
+ <use vreme.png>
+Package pdftex.def Info: vreme.png used on input line 350.
+(pdftex.def)             Requested size: 209.12683pt x 318.4878pt.
+
+Overfull \hbox (7.62724pt too wide) in paragraph at lines 347--353
+>>>>>>> origin
 \OT1/cmr/m/n/12 iza-bra-nim gra-do-vima. Kako bi iza-brali ^^Tzeljenu lo-ka-cij
 u, u po-lje "\OT1/cmr/m/it/12 City Name\OT1/cmr/m/n/12 "upi^^Tsemo
  []
 
+<<<<<<< HEAD
 [19 <./points.png> <./data.png>] [20 <./vreme.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 442.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 442.
@@ -900,6 +1065,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 442.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 442.
 Package rerunfilecheck Info: File `Master_rad.out' has not changed.
 (rerunfilecheck)             Checksum: 82F987F1AEC7DDF3C7959E791B5695E6;1889.
+=======
+[17 <./points.png> <./data.png>] [18 <./vreme.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 355.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 355.
+ (./Master_rad.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 355.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 355.
+Package rerunfilecheck Info: File `Master_rad.out' has not changed.
+(rerunfilecheck)             Checksum: 0C51B2332E5E8B42797545FD0E403130;1642.
+>>>>>>> origin
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -909,6 +1084,7 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  20062 strings out of 493029
  355331 string characters out of 6136234
  505636 words of memory out of 5000000
@@ -936,4 +1112,31 @@ PDF statistics:
  359 compressed objects within 4 object streams
  127 named destinations out of 1000 (max. 500000)
  301 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+ 19919 strings out of 493029
+ 353202 string characters out of 6136234
+ 447733 words of memory out of 5000000
+ 23016 multiletter control sequences out of 15000+600000
+ 8602 words of font info for 30 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 54i,8n,77p,1127b,1232s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+
+Output written on Master_rad.pdf (20 pages, 383211 bytes).
+PDF statistics:
+ 350 PDF objects out of 1000 (max. 8388607)
+ 296 compressed objects within 3 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 272 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> origin
 
